@@ -1,0 +1,379 @@
+index.html:
+----------
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='icon' href='https://codehs.com/uploads/297d6e9b207a211446ff82a6f25f24d4' type='image/x-icon'/ >
+    <title>RIFAjackson.com</title>
+   
+   
+    </head>
+  <body>
+   
+     <table style="width:100%;">
+ <tr>
+     <th><img id="logo" src="https://codehs.com/uploads/8f7261b697e7bb85f6d59588cfd43926">
+      <br>
+      
+      <h1 id="jax"><b>OF JACKSON</b></h1>
+     </th>
+     <td>
+        BROUGHT TO YOU BY <b>PHOENIX TEAM</b></td>
+     <td>
+          <img src="https://codehs.com/uploads/40a7c0e45e1bdaad99ffeda2a9b817b7"
+        img style="height: 150px; width: 150px"/>
+     </td>
+ </tr>
+  </table>
+
+<button class="tablink" onclick="openPage('About', this, '#FF8C00')" style="outline:4px solid black" id="defaultOpen">About</button>
+<button class="tablink" onclick="openPage('News', this, '#4A7349')"style="outline:4px solid black">News</button>
+<button class="tablink" onclick="openPage('Contact', this, '#6A5336')"style="outline:4px solid black">Contact</button>
+<button class="tablink" onclick="openPage('Give', this, '#971500')"style="outline:4px solid black">Give</button>
+
+<div id="About" class="tabcontent"> 
+  <h4>who we are</h4>
+  <p>RIFA is a local, faith based organization that has been a part of the Jackson community since 1976.</p>
+  <br>
+  <h4>our vision</h4>
+  <p>To lead and engage the community in the fight against hunger.</p>
+  <br>
+  <h4>our mission</h4>
+  <p>To reach out with the love of Christ to provide physical and spiritual nourishment.</p>
+  <br>
+  <h4>safe place</h4>
+  <p>As much as we are all about fighting hunger, we are a safe place for people to find community and experience Christ.</p>
+  <br>
+  <h4>why we exist</h4>
+<p>Because 1 out of 5 people living in Jackson are unsure of where their next meal is coming from. 18.9% of people in Madison County live below the poverty level which is higher than the 15% US average.</p>
+
+  <button onclick="document.location='page1.html'" class="history">Our History Timeline</button>
+</div>
+
+<div id="News" class="tabcontent">
+
+  <h4>FEBRUARY: NATIONAL CANNED FOOD MONTH</h4>
+  <p>
+      <img src="https://codehs.com/uploads/ccc46c28d576eb1f4256f4b344a4831c" class="pic">
+      <br>
+      February 1st kicks of National Canned Food Month! Didn’t realize this was a thing? Lucky for you, all of us here at RIFA always have canned food at the forefront of our minds and are happy to fill you in on its importance.
+      <br>
+  </p>
+  <h4>SOUPER BOWL OF CARING</h4>
+  <p>
+    <img src="https://codehs.com/uploads/0e3cdb1ea631d017c821c32f37832132" class="pic">
+    <br>
+    This Super Bowl Sunday, February 7th, RIFA will be joining in the Souper Bowl of Caring, a national movement of people working together around the time of the game to fight hunger and poverty in their local communities. This idea came from a simple prayer, “Lord, even as we enjoy the Super Bowl football game, help us be mindful of those that do not have a bowl of soup to eat.”
+    <br>
+  </p>
+  <h4>HUNGER-FREE HOLIDAYS</h4>
+  <p>
+      <img src="https://codehs.com/uploads/a40adf62f004d21c15cbce7920f7ade9" class="pic">
+      <br>
+    For many of us, our happiest holiday memories are centered around the dinner table with family and friends. The home-cooked meals, the conversation, and the people we get to spend it with is what makes this time of year so special.
+
+However, for many families, the holiday season can look much different. We here at RIFA believe that each family deserves the opportunity to eat a traditional holiday meal and want to do everything we can to provide this for the community.
+      <br>
+    <b>Email us or shoot us a text if you have a question about our events.</b>
+  </p>
+  </div>
+
+<div id="Contact" class="tabcontent">
+   <img src="https://codehs.com/uploads/65d90237642bdeee55e34480e3391d56" class="photo">
+  <h2> let's get in touch!</h2>
+<br>
+<p><b>Contact Us:</b> info@rifajackson.org </p>
+<p><b>Phone Us:</b> 731-427-7963</p>
+<p><b>Fax Us:</b> 731-427-3663</p>
+
+<br>
+<h4>...or come and visit us at</h4>
+       
+133 Airways Blvd.
+Jackson, TN 38301
+
+
+ 
+</div>
+
+<div id="Give" class="tabcontent">
+
+  <p>Did you know that more than 12,000 people in Jackson, Tennessee live every day with hunger as their constant companion? This is a real struggle for many people in our community. But your investment into our mission changes the story of hunger for them. When you give to RIFA, you let thousands of people in need know that there is hope, because someone cares enough to take action.
+  <br>
+    <img src="https://codehs.com/uploads/e2fbff5cadd3edf64897400b5fc0c890" class="photo">
+  <br>
+<p><b>What the money supports:</b>
+<p>$1.82 will provide a meal to the homeless</p>
+<p>$3.78 will provide food to a child for one weekend</p>
+<p>$7.28 will provide emergency food for a family</p>
+<p>$18.20 will provide a food box to a senior citizen</p>
+</div>
+
+
+</div> 
+
+  <script>
+  /*Javascript*/
+      function openPage(pageName, elmnt, color) {
+ 
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+
+  document.getElementById(pageName).style.display = "block";
+
+
+  elmnt.style.backgroundColor = color;
+}
+
+
+document.getElementById("defaultOpen").click();
+     
+  </script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
+
+style.css:
+---------
+body{
+    background-color:orange;
+    height:100%;
+    width:auto;
+}
+
+
+table,tr,th,td {
+border: 9px solid black;
+vertical-align: left;
+
+}
+table {
+width: 0px;
+vertical-align:left;
+height:10px;
+
+}
+th {
+width:100px;
+color: black;
+text-align: center;
+background-color:orange;
+font-size: 70px;
+}
+td{
+font-size: 30px;
+text-align: center;
+background-color:#ff6f08;
+width:15%;
+color:black;
+font-family:sans-serif, arial;
+
+}
+
+#jax{
+    font-size:48px;
+}
+
+#logo{
+  min-width:100px;  
+  max-width:375px;
+  padding:0px;
+  margin:0px;
+}
+
+#building{
+    position:absolute;
+    right:10%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float:left;
+  border: none;
+  outline: 4px solid black;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+ 
+ 
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: auto;
+  width: 100%;
+  font-size:25px;
+
+}
+
+h4, h3, h2, h1{
+    font-variant:small-caps;
+    font-size:35px;
+   
+
+}
+h1{
+    text-align:center;
+}
+ 
+ .history{
+    margin:10px;
+}
+
+p{
+    color:white;
+}
+
+h1{
+    margin:20px;
+}
+.pic{
+    outline:black solid;
+    box-shadow:10px 5px 5px black;
+}
+/*styles for image on contact page*/
+.photo{
+     outline:black solid;
+    box-shadow:10px 5px 5px black;
+    position:absolute;
+    left:50%;
+
+}
+#About {background-color: orange;}
+#News {background-color: #588957;}
+#Contact {background-color: #795F3E;}
+#Give {background-color: #AE1E23}
+
+page1.html:
+----------
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='icon' href='https://codehs.com/uploads/297d6e9b207a211446ff82a6f25f24d4' type='image/x-icon'/ >
+    <title>RIFAjackson.com</title>
+    
+    
+    </head>
+  <body>
+   
+      <table style="width:100%;">
+ <tr>
+   
+    
+
+
+     <th><img id="logo" src="https://codehs.com/uploads/8f7261b697e7bb85f6d59588cfd43926">
+      <br>
+      <h1 id="jax"><b>OF JACKSON</b></h1>
+     </th>
+     <td> 
+        BROUGHT TO YOU BY <b>PHOENIX TEAM</b></td>
+     <td>
+          <img src="https://codehs.com/uploads/40a7c0e45e1bdaad99ffeda2a9b817b7"
+        img style="height: 150px; width: 150px"/>
+     </td>
+ </tr>
+  </table>
+
+  <h1>OUR HISTORY TIMELINE</h1>
+  <hr>
+  <p><b>1976</b> – RIFA was established with Rev. Gary Scheidt as the first Executive Director. The office was located in Jones Hall at the old Union University in downtown Jackson.</p>
+  <hr>
+<p><b>1977-1978</b> – RIFA coordinated Food Fairs in the parking lot of the old West Jackson Baptist Church, which was the beginning of today’s Farmers Market.</p>
+<hr>
+<p><b>1992</b> – RIFA moved to the old Clean Linen building at 219 N. Highland Avenue.</p>
+<hr>
+<p><b>1996</b> – The RIFA Thrift Store opens.</p>
+<hr>
+<p><b>1996</b> –The local Community Soup Kitchen became one of RIFA’s ministries.</p>
+<hr>
+<p><b>2005</b> – Snack Backpack ministry started with one school and 25 children served.</p>
+<hr>
+<p><b>2005</b> – RIFA begins operating an independent Food Bank.</p>
+<hr>
+<p><b>2005</b> – First annual Canstruction fundraiser held at the Jackson Fairgrounds.</p>
+<hr>
+<p><b>2009</b> – Lisa Tillman becomes Executive Director of RIFA.</p>
+<hr>
+<p><b>2012</b> – Moved to the former Nando Jones building at 133 Airways Boulevard.</p>
+<hr>
+<p><b>2014</b> – Canstruction moved to the Civic Center on its 10th anniversary.</p>
+<hr>
+<p><b>2014</b> – RIFA was named the Jackson Chamber’s Nonprofit of the Year.</p>
+<hr>
+<p><b>2015</b> – RIFA graduates from the Alliance for Nonprofit Excellence’s Program for Nonprofit Excellence (PNE).</p>
+<hr>
+<p><b>2019</b> – RIFA started the Bus Stop Cafe.</p>
+<hr>
+<p><b>2019</b> – RIFA distrubuted 518,136 meals.</p>
+ 
+  <button onclick="document.location='index.html'">Go Back</button>
+</div>
+
+  <script>
+      function openPage(pageName, elmnt, color) {
+  
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+
+  document.getElementById(pageName).style.display = "block";
+
+ 
+  elmnt.style.backgroundColor = "";
+}
+
+
+document.getElementById("defaultOpen").click();
+      
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
+
